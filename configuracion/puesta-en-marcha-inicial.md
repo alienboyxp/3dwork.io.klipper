@@ -14,7 +14,7 @@ A día de hoy Klipper cuenta con muchos ejemplos de configuración de impresoras
 
 Podéis revisar estos [**ejemplos aquí desde su Github**](https://github.com/Klipper3d/klipper/tree/master/config) o por otro lado podréis acceder a ellos usando el interfaz de Klipper (Mainsail, Fluidd u otro) en el apartado de ajuste de configuraciones de máquina accediendo al **directorio /config**.
 
-![Ejemplo de acceso a nuestro printer.cfg usando Mainsail](<../.gitbook/assets/image (19).png>)
+![Ejemplo de acceso a nuestro printer.cfg usando Mainsail](<../.gitbook/assets/image (17).png>)
 
 Una vez localizado el o los ejemplos que necesitemos los copiaremos en nuestro printer.cfg asegurándonos que tenemos [**el serial id correcto para nuestra/s MCUs que encontramos durante la instalación de Klipper**](broken-reference).
 
@@ -74,11 +74,11 @@ Una vez ya tenemos nuestro printer.cfg listo revisaremos que al recargar nuestra
 
 Para ello usaremos principalmente la consola:
 
-![Consola en Mainssail](<../.gitbook/assets/image (7).png>)
+![Consola en Mainssail](<../.gitbook/assets/image (1).png>)
 
 Controles de movimientos:
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (21).png>)
 
 Y otras herramientas que nos facilita el interfaz de Klipper para gestionar nuestra máquina.
 
@@ -86,7 +86,7 @@ Y otras herramientas que nos facilita el interfaz de Klipper para gestionar nues
 
 La primera comprobación que debemos realizar es verificar que nuestros termistores están reportando temperatura de forma correcta y estable:
 
-![](<../.gitbook/assets/image (2).png>)
+![](../.gitbook/assets/image.png)
 
 En el apartado de temperaturas de nuestro interfaz Klipper verificaremos que las temperaturas del nozzle y cama están presentes y no fluctúan de forma anormal.
 
@@ -107,7 +107,7 @@ Para ello y desde la parte de temperaturas que ya vimos en el paso anterior:
 * En la columna Target de nuestro Extruder le pediremos que caliente a 60 grados nuestro extrusor, en unos segundos deberíamos de ver que la gráfica y lecturas de temperatura comienzan a ascender. Una vez llegue a la temperatura y después de unos segundos manteniendola podemos seleccionar en Target Off
 * Realizaremos el mismo proceso para Heater Bed
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (7).png>)
 
 En siguientes pasos veremos como realizar un [**ajuste del PID**](broken-reference) antes de intentar hacer ningún test de impresión.
 

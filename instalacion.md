@@ -8,7 +8,7 @@
 
 ## **Antes de comenzar!!!**
 
-![](<.gitbook/assets/image (11).png>)
+![](<.gitbook/assets/image (3).png>)
 
 Por favor entiende que instalar Klipper en tu impresora require de cierta experiencia con impresoras 3d, hardware y software. Puede no ser una tarea trivial para gente que se acaba de iniciar en el mundo 3D o que no dispone de unos minimos conocimientos ya que puedes romper tu impresora o pi durante el proceso
 
@@ -76,7 +76,7 @@ Si necesitamos volver a lanzar Kiauh en el futuro podemos ir a `home/pi/kiauh y 
 
 Una vez hemos realizado el proceso completo y lanzamos Kiauh deveriamos ver un menú como este:
 
-![](<.gitbook/assets/image (12).png>)
+![](<.gitbook/assets/image (14).png>)
 
 ### Instalando Klipper y Moonraker
 
@@ -84,7 +84,7 @@ Para nuestra guía vamos a usar Klipper que es el core del sistema y Moonraker q
 
 De las opciones del menú elegiremos la opción 1 para acceder al menú de instalación
 
-![](<.gitbook/assets/image (18).png>)
+![](<.gitbook/assets/image (19).png>)
 
 Volveremos a elegir la opción 1 y comenzaremos el proceso de instalación:
 
@@ -97,7 +97,7 @@ Volveremos a elegir la opción 1 y comenzaremos el proceso de instalación:
 
 Existen diferentes formas de gestionar Klipper, recomendamos el uso de Mainsail o Fluidd, es posible usar Octoprint también pero creemos que no es la mejor opción salvo casos puntuales ya que es más de uso general y Mainsail/Klipper son desarrollos específicos para Klipper.
 
-![](<.gitbook/assets/image (21).png>)
+![](<.gitbook/assets/image (10).png>)
 
 La instalación es bastante sencilla y similar a la que realizamos en el punto anterior tan solo seleccionando el interfaz que más nos guste y seguir el asistente/indicaciones.
 
@@ -169,7 +169,7 @@ Ya que hemos Klipper este nos va a permitir de una forma muy sencilla a los dife
 
 Accederemos a Kiauh desde SSH
 
-![](<.gitbook/assets/image (17).png>)
+![](<.gitbook/assets/image (11).png>)
 
 Elegiremos la opción más adecuada para nuestra placa ya que en ocasiones nos interesará solamente hacer el Build del firmware para después extraerlo, Flash to aplicarlo a nuestra placa si es compatible con el proceso o Build + Flash que realizaría todo el proceso.
 
@@ -190,9 +190,9 @@ Os facilitamos la configuración para las electrónicas que hemos probado:
 {% tab title="SKR Octopus (PRO)" %}
 Elegiremos las siguientes opciones dependiendo del procesador/version de nuestra Octopus:
 
-![](<.gitbook/assets/image (9).png>)
+![](<.gitbook/assets/image (15).png>)
 
-![](<.gitbook/assets/image (13).png>)
+![](<.gitbook/assets/image (5).png>)
 
 Una vez tengamos todas las opciones ajustadas pulsaremos _**q**_ para salir y "_**Yes**_" para almacenar la configuracion, si lanzamos el proceso desde Kiauh nos realizará directamente el comando _**make**_.
 
@@ -202,7 +202,7 @@ Una vez terminado el compilado del firmware podremos encontrar el binario _**kli
 {% tab title="Fysetc Spider" %}
 Elegiremos las siguientes opciones dependiendo del procesador/version de nuestra Spider:
 
-![](<.gitbook/assets/image (6).png>)
+![](<.gitbook/assets/image (20).png>)
 
 {% hint style="info" %}
 **Si tu Spider es posterior al 23/6/2021 elige como Bootloader offset 32KiB bootloader.**
@@ -220,11 +220,11 @@ Una vez terminado el compilado del firmware podremos encontrar el binario _**kli
 
 Ahora que tenemos nuestro firmware Klipper en nuestra electrónica procederemos a verificar que tenemos comunicación con ella, un paso previo y necesario antes de continuar con la configuración de Klipper.
 
-![](<.gitbook/assets/image (1).png>)
+![](<.gitbook/assets/image (9).png>)
 
 Elegiremos el tipo de conexión entre nuestra electrónica y la Pi, normalmente y aconsejable USB:
 
-![](<.gitbook/assets/image (15).png>)
+![](<.gitbook/assets/image (2).png>)
 
 {% hint style="info" %}
 **En el caso que usemos Klipper por los pines GPIO deberemos habilitar la comunicación serial en nuestra pi, para simplificar el proceso teneis aqui unos comandos para que sea más sencillo:**
@@ -238,11 +238,11 @@ Elegiremos el tipo de conexión entre nuestra electrónica y la Pi, normalmente 
 
 En el caso que no detecte nuestra electrónica deberemos verificar el proceso de aplicar el firwmare Klipper o el cableado:
 
-![](<.gitbook/assets/image (16).png>)
+![](<.gitbook/assets/image (12).png>)
 
 &#x20;En el este correcto nos listará un dispositivo, es importante anotarse este ya que lo necesitaremos más adelante:
 
-![Deberemos copiar lo marcado para usarlo en los ficheros de configuración de Klipper](<.gitbook/assets/image (10).png>)
+![Deberemos copiar lo marcado para usarlo en los ficheros de configuración de Klipper](<.gitbook/assets/image (18).png>)
 
 {% hint style="info" %}
 En el caso que no realicemos el proceso desde Kiauh podemos usar el comando _**ls /dev/serial/by-id**_ para listar los dispositivos conectados.
